@@ -30,14 +30,14 @@ const Nav = () => {
         </div>
         <div className="link">
             
-            <div className="home"><Link to="/home"><HomeIcon className='homeicon'/></Link></div>
-            <div className="edu"><Link to="/education"><SchoolIcon className='school'/></Link></div>
-            <div className="skills"><Link to="/skills"><CodeIcon className='code'/></Link></div>
-            <div className="project"><Link to="/projects"><ComputerIcon className='computer'/></Link></div>
+            <div className="home"><Link to="/portfolio-website-in-react/home"><HomeIcon className='homeicon'/></Link></div>
+            <div className="edu"><Link to="/portfolio-website-in-react/education"><SchoolIcon className='school'/></Link></div>
+            <div className="skills"><Link to="/portfolio-website-in-react/skills"><CodeIcon className='code'/></Link></div>
+            <div className="project"><Link to="/portfolio-website-in-react/projects"><ComputerIcon className='computer'/></Link></div>
             
         </div>
         <div className="btnlink btnlinknav">
-            <a href="/download.pdf" download>
+            <a href="/portfolio-website-in-react/download.pdf" download>
                 <button><DownloadIcon className='email'/> Resume </button>
             </a>
         </div>

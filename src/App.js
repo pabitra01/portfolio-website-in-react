@@ -18,18 +18,18 @@ function App() {
     <div className="App">
       <Nav/>
       <Routes>
-      <Route path="/" element={<Home />}> 
+      <Route path="/portfolio-website-in-react/" element={<Home />}> 
       </Route>
-      <Route path="/home" element={<Home />}>
+      <Route path="/portfolio-website-in-react/home" element={<Home />}>
        
       </Route>
-      <Route path="/education" element={<Education />} >
+      <Route path="/portfolio-website-in-react/education" element={<Education />} >
         
       </Route>
-      <Route path="/skills" element={<Skill />}>
+      <Route path="/portfolio-website-in-react/skills" element={<Skill />}>
        
       </Route>
-      <Route path="/projects" element={<Project />}>
+      <Route path="/portfolio-website-in-react/projects" element={<Project />}>
       
       </Route>
     </Routes>
