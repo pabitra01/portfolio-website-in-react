@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.smain{
+    height: 100vh;
+    width: 90%;
+    margin: 50px auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-top: 20px;
+    
+}
+.smain h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skillhead{
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin-bottom: 30px;
+}
+.first-con{
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.containerskill{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.percen p{
+    font-size: 10px;
+}
+.skil{
+    width: 40%;
+}
+.percen{
+    width: 50%;
+    height: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    
+}
+.inpercen{
+    width: 90%;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+.java{
+    width: 90%;
+    background-color: blue;
+}
+.c{
+    width: 80%;
+    background-color: aquamarine;
+}
+.html{
+    width: 90%;
+    background-color: antiquewhite;
+}
+.css{
+    width: 85%;
+    background-color: blueviolet;
+}
+.javascript{
+    width: 70%;
+    background-color: chartreuse;
+}
+.react{
+    width: 75%;
+    background-color: chocolate;
+}
+.express{
+    width: 70%;
+    background-color: rgb(51, 2, 83);
+}
+.bootstrap{
+    width: 75%;
+    background-color: darkgreen;
+}
+.node{
+    width: 70%;
+    background-color: darkmagenta;
+}
+.sql{
+    width: 90%;
+    background-color: dodgerblue;
+}
+.mongo{
+    width: 60%;
+    background-color: lightpink;
+}
+@media (max-width : 768px){
+    .smain{
+        box-shadow: none;
+        height: fit-content;
+        width: 100%;
+    }
+    .first-con{
+        width: 90%;
+    }
+}

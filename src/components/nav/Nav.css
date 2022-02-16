@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.parentnav{
+    position: relative;
+}
+.link{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.link div{
+    cursor: pointer;
+}
+/* .iconbg{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+button{
+    
+    display: flex;
+    justify-content: center;
+    background-color:#E60965;
+    border: none;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+}
+.email{
+    margin-right: 3px;
+}
+button{
+    text-transform: uppercase;
+    cursor: pointer;
+
+
+}
+.hi{
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+}
+.icon{
+    display: block;
+}
+/* .htext{
+    display: none;
+} */
+.homeicon{
+    color: #E60965;
+    display: none;
+}
+.code{
+    color: black;
+}
+.school{
+    color: black;
+}
+.computer{
+    color: black;
+}
+.email{
+    color:white;
+}
+.homeicon:hover{
+    color: #E60965;
+}
+.code:hover{
+    color: #E60965;
+}
+.school:hover{
+    color: #E60965;
+}
+.computer:hover{
+    color: #E60965;
+}
+.menu-mobile{
+    display: none;
+    cursor: pointer;
+    color: #E60965;
+}
+.floatmenu-mobile{
+    display: none;
+}
+
+
+
+
+
+@media (max-width : 768px){
+    .menu-mobile{
+        display: block;
+    }
+    .link{
+        display: none;
+    }
+    .btnlinknav{
+        display: none;
+    }
+    .nav{
+        justify-content: space-between;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    
+    .floatmenu-mobile{
+        display: none;
+    }
+    .floatmenu-mobile-display{
+        width: 90%;
+        
+        z-index: 1;
+        position: fixed;
+        left: 0;
+        right: 0;
+        
+        background-color: white;
+        color: white;
+        padding: 0;
+        margin: auto;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-mobile{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        background-color: white;
+    }
+    .edu-mobile{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        background-color: white;
+    }
+    .skills-mobile{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        background-color: white;
+    }
+    .project-mobile{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        background-color: white;
+    }
+    .hov:active{
+        background-color: rgb(240, 240, 240);
+    }
+}
