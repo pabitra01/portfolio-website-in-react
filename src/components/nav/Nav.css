@@ -173,6 +173,6 @@ a{
         background-color: white;
     }
     .hov:active{
-        background-color: rgb(240, 240, 240);
+        background-color: #111111;
     }
 }

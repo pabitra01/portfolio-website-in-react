@@ -38,6 +38,7 @@ const tab=(id)=>{
   current.classList.add('active');
   
 }
+const floatmenu=`w-full h-[100vh] z-10 absolute top-0 bg-black right-0 m-auto flex flex-col justify-start item-center pt-10`
 useEffect(()=>{
   const a=document.getElementsByClassName('active');
   if(a.length!=0){
@@ -74,11 +75,12 @@ useEffect(()=>{
         </div>
         
     </div>
-    <div className={state ? "floatmenu-mobile-display" :"floatmenu-mobile"}>
-        <div className="home-mobile hov"><Link to="/home">Home</Link></div>
-        <div className="edu-mobile hov"><Link to="/education">Education</Link></div>
-        <div className="skills-mobile hov"><Link to="/skills">Skills</Link></div>
-        <div className="project-mobile hov"><Link to="/projects">Projects</Link></div>
+    <div className={state ? floatmenu :"floatmenu-mobile"}>
+        <div className="text-white absolute right-0 text-[20px] top-0 pt-3 px-7" onClick={()=>setstate(false)}>x</div>
+        <div className="text-center w-full py-8 bg-black text-white hov"><Link to="/home">HOME</Link></div>
+        <div className="text-center w-full py-8 bg-black text-white hov"><Link to="/education">EDUCATION</Link></div>
+        <div className="text-center w-full py-8 bg-black text-white hov"><Link to="/skills">SKILLS</Link></div>
+        <div className="text-center w-full py-8 bg-black text-white hov"><Link to="/projects">PROJECTS</Link></div>
     </div>
     </div>
   )
