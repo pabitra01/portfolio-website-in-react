@@ -7,15 +7,15 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='w-[100%] h-[250px] bg-white dark:bg-[#111111] flex justify-center items-center'>
         <div className='fmain'>
             <div className="sociallinks">
-                <a href="https://github.com/pabitra01" target="_blank"><GitHubIcon className='github'/></a>
-                <a href="https://www.linkedin.com/in/pabitra-ranjan-rout/" target="_blank"><LinkedInIcon className='linked'/></a>
-                <a href=""><InstagramIcon className='instagram'/></a>
-                <a href=""><TwitterIcon className='twitter'/></a>
+                <a href="https://github.com/pabitra01" target="_blank"><GitHubIcon className='text-black dark:text-white mx-[20px]'/></a>
+                <a href="https://www.linkedin.com/in/pabitra-ranjan-rout/" target="_blank"><LinkedInIcon className='text-black dark:text-white  mx-[20px]'/></a>
+                <a href=""><InstagramIcon className='text-black dark:text-white  mx-[20px]'/></a>
+                <a href=""><TwitterIcon className='text-black dark:text-white  mx-[20px]'/></a>
             </div>
-            <div className="copy"><p>@Copywrite 2022</p></div>
+            <div className=""><p className='text-black dark:text-white m-[20px] text-center'>@pabitra 2022</p></div>
         </div>
     </footer>
   )

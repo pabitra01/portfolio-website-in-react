@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 .smain{
-    height: 100vh;
+    height: 120vh;
     width: 90%;
     margin: 50px auto;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     padding-top: 20px;
     
 }
@@ -25,7 +25,7 @@
     width: 70%;
     padding: 50px;
     margin: auto;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 .containerskill{
     display: flex;

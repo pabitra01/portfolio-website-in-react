@@ -10,12 +10,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 .btech{
     width: 27%;
     height: 70vh;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
 .inter{
     width: 27%;
     height: 70vh;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,21 +33,13 @@
 .tenth{
     width: 27%;
     height: 70vh;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.btech h3 {
-    color: #E60965;
-}
-.inter h3 {
-    color: #E60965;
-}
-.tenth h3 {
-    color: #E60965;
-}
+
 .secpara{
     margin-bottom: 20px;
     color: #75758B;
@@ -71,9 +63,6 @@
 .firparat{
     margin-top: 20px;
     color: #75758B;
-}
-.emain h3{
-    font-size: 25px;
 }
 .thirdpara{
     color: #75758B;

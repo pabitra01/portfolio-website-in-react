@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React ,{useEffect, useState} from 'react'
 import HomeIcon from '@mui/icons-material/Home';
 import ComputerIcon from '@mui/icons-material/Computer';
 import SchoolIcon from '@mui/icons-material/School';
@@ -11,34 +11,60 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Link
+    Link,
+    NavLink
   } from "react-router-dom";
 import './Nav.css'
-
+import { color } from '../../localStorage';
+import { useSelector } from 'react-redux';
 
 
 const Nav = () => {
   const [state, setstate] = useState(false);
- 
- 
+  const currentColor=useSelector((state)=>
+  state.color
+)
+  const [isContain,setiscontain]=useState(false);
+const tab=(id)=>{
+  setiscontain(true);
+  console.log("function called");
+  const classes=document.getElementsByClassName('stick');
+  for(let i=0;i<classes.length;i++){
+    classes[i].classList.remove('active');
 
+    console.log(classes[i]);
+  }
+  const current=document.getElementById(id);
+  current.classList.add('active');
+  
+}
+useEffect(()=>{
+  const a=document.getElementsByClassName('active');
+  if(a.length!=0){
+  a[0].style.color=currentColor;
+  }
+},[])
   return (
-    <div className="parentnav">
-         <div className='nav'>
+    <div className="parentnav ">
+         <div className='nav dark:bg-[#111111]'>
         <div className="logo">
-            <h2>pabi</h2>
+            <Link to='/home'><h2 style={{color:currentColor}} className='text-[26px] font-mono'>pabi</h2></Link> 
         </div>
-        <div className="link">
+        <div className="link" id='link_header'>
             
-            <div className="home"><Link to="/portfolio-website-in-react/home"><HomeIcon className='homeicon'/></Link></div>
-            <div className="edu"><Link to="/portfolio-website-in-react/education"><SchoolIcon className='school'/></Link></div>
-            <div className="skills"><Link to="/portfolio-website-in-react/skills"><CodeIcon className='code'/></Link></div>
-            <div className="project"><Link to="/portfolio-website-in-react/projects"><ComputerIcon className='computer'/></Link></div>
+            <div className="home stick dark:text-white " id='home' onClick={()=>tab('home')} >
+              <NavLink to="/home">
+                <HomeIcon className=' ' />
+              </NavLink>
+            </div>
+            <div className="edu stick dark:text-white " id='edu' onClick={()=>tab('edu')}><NavLink to="/education"><SchoolIcon className=''/></NavLink></div>
+            <div className="skills stick dark:text-white" id='skills' onClick={()=>tab('skills')}><NavLink to="/skills"><CodeIcon className=''/></NavLink></div>
+            <div className="project stick dark:text-white" id='project' onClick={()=>tab('project')}><NavLink to="/projects"><ComputerIcon className=''/></NavLink></div>
             
         </div>
         <div className="btnlink btnlinknav">
-            <a href="/portfolio-website-in-react/download.pdf" download>
-                <button><DownloadIcon className='email'/> Resume </button>
+            <a href="/download.pdf" download>
+                <button style={{backgroundColor:currentColor}} className='download font-mono'><DownloadIcon className='email '/> Resume </button>
             </a>
         </div>
         <div className="menu-mobile" onClick={()=>{
